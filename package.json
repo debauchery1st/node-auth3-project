@@ -2,8 +2,14 @@
   "name": "node-auth3-project",
   "version": "1.0.0",
   "description": "## Topics",
+  "apidoc": {
+    "title": "Custom apiDoc browser title",
+    "url": "http://0.0.0.0/v1"
+  },
   "main": "index.js",
   "scripts": {
+    "server": "nodemon",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
