@@ -42,8 +42,8 @@ router.post(
               message: `Welcome ${user.username}`,
               token: generateToken(user)
             })
-          : res.status(401).json({
-              message: "Invalid Credentials"
+          : res.status(418).json({
+              message: "I'm a little teapot"
             })
       )
       .catch(({ name, code, message, stack }) =>
